@@ -1,0 +1,47 @@
+- ## Cross-Platform Xamarin Forms Sample Application
+    - ## Support: Android 5.1-8.1 & IOS 11.3
+- ## Плацдарм для хакатонов, в сборке:
+    - Custom Vision
+    - REST API обертки (POST/GET)
+    - Диалоги
+    - Навигация
+    - Карты
+    - Работа с камерой
+    - Настройки (через дефолтные Key-Chain Droid/IOS)
+    - CarouselView
+
+- ## Projects:
+    - UnblockHackNET - Shared Logic Project (.NET Standart 2)
+    - UnblockHackMobile.Droid - Native Xamarin.Android Project
+    - UnblockHackMobile.iOS - Native Xamarin.IOS Project
+  
+- ## Shared Logic:
+    - BL - Business logic:
+    - DB:
+        - DataBaseObjects - DB Models
+        - DataBaseService - DB API Wrapper
+    - ViewModels - Date Bindings to View :
+        - Auth
+        - Carto
+        - CustomVision
+        - MainBurger
+        - Settings
+        - BaseViewModel - Base View Model
+    - Helpers:
+        - Bindable - Base Bindable
+        - MessageBus - Using To Messaging
+        - Settings - Cross Platform Settings
+    - UI - User Interfaces:
+    - Pages:
+        - Auth
+        - Carto
+        - CustomVision
+        - MainBurger
+        - Settings
+        - BasePage - Base View
+        - DialogService - Service to make Dialogs
+        - NavigationService - Service Navigations Provider
+   - Annotations - Code Annotations
+   - AppEnums - App Enumerables
+   - Consts - Public Constants
+    

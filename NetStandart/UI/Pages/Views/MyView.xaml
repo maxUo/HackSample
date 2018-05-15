@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="UnblockHackNET.UI.Pages.Views.MyView">
+    <ContentView.Content>
+        <ListView
+            IsInNativeLayout="true"
+            IsNativeStateConsistent="true"
+            x:Name="listV"
+            Footer=""
+            Margin="10,20,10,0"
+            ItemSelected="Handle_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Text="{Binding Header}"
+                        Detail="{Binding Description}">
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentView.Content>
+</ContentView>

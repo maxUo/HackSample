@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="UnblockHackNET.UI.Pages.CartoPage"
+    xmlns:pages="clr-namespace:UnblockHackNET.UI.Pages"
+    xmlns:maps="clr-namespace:Syncfusion.SfMaps.XForms;assembly=Syncfusion.SfMaps.XForms">
+    <ContentPage.Content>
+        
+    </ContentPage.Content>
+</pages:BasePage>

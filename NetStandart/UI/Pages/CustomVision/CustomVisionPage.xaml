@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="UnblockHackNET.UI.Pages.CustomVision.CustomVisionPage"
+    xmlns:pages="clr-namespace:UnblockHackNET.UI.Pages">
+    <ContentPage.Content>
+        <ScrollView
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="Выберите фото для классификатора"
+                    FontSize="Medium"
+                    HorizontalOptions="Center" />
+                <Label
+                    HorizontalOptions="Center"
+                    Text="{Binding PetuchText}"
+                    FontSize="Medium">
+                </Label>
+                <Image
+                    Source="{Binding ImageSource}"
+                    HeightRequest="250" />
+                <ActivityIndicator
+                    IsRunning="{Binding IndicatorIsRunning}"
+                    IsVisible="{Binding IndicatorIsRunning}" />
+                <Label
+                    Text="{Binding ResultText}"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="{Binding ResultFontSize}" />
+                <Button
+                    VerticalOptions="End"
+                    Text="Выбрать Фото"
+                    Command="{Binding GetImageAndRunCommand}">
+                </Button>
+                <Button
+                    VerticalOptions="End"
+                    Text="Сделать Фото"
+                    Command="{Binding SetImageAndRunCommand}">
+                </Button>
+                <Button
+                    VerticalOptions="End"
+                    Text="Место обитания"
+                    IsVisible = "{Binding IsPredictSet}"
+                    IsEnabled = "{Binding IsPredictSet}"
+                    Command="{Binding GoToCartoPage}">
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</pages:BasePage>

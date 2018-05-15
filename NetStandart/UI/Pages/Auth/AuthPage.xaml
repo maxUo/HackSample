@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="UnblockHackNET.UI.Pages.Auth.AuthPage"
+    xmlns:pages="clr-namespace:UnblockHackNET.UI.Pages">
+    <StackLayout
+        Margin="10,20,10,0"
+        VerticalOptions="Center"
+        Spacing="20">
+        <Entry
+            Keyboard="Numeric"
+            FontSize="Medium"
+            Text="{Binding EntryText}">
+        </Entry>
+        <Label
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            Text="Логин">
+        </Label>
+        <Button
+            Text="Войти"
+            Command="{Binding AuthCommand}">
+        </Button>
+    </StackLayout>
+</pages:BasePage>
